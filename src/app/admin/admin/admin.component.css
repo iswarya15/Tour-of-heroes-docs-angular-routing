@@ -1,0 +1,21 @@
+p {
+  font-family: Lato;
+}
+nav {
+  background-color: #1f3d83;
+  height: 40px;
+  /* padding: 10px; */
+  padding: 0 5px;
+}
+button {
+  /* height: 40px;
+  width: 150px; */
+  background-color: #1ca64b;
+  color: #e5e5e5;
+  margin-left: 20px;
+}
+.active {
+  /* background-color: #e5e5e5;
+  color: #14213d; */
+  opacity: 50%;
+}

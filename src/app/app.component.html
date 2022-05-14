@@ -1,0 +1,25 @@
+<nav>
+  <button routerLink="/heroes-list" routerLinkActive="active" mat-raised-button>
+    Heroes-List
+  </button>
+  <button
+    routerLink="/crisis-center"
+    routerLinkActive="active"
+    mat-raised-button
+  >
+    Crisis-Center
+  </button>
+  <button
+    mat-raised-button
+    [routerLink]="[{ outlets: { popup: ['compose'] } }]"
+  >
+    Contact
+  </button>
+  <button mat-raised-button [routerLink]="['/admin']">Admin</button>
+</nav>
+
+<router-outlet></router-outlet>
+<router-outlet name="popup"></router-outlet>
+<!-- 
+  To use the routable animations, wrap the RouterOutlet inside an element, use the @routeAnimation trigger, and bind it to the element.
+ -->

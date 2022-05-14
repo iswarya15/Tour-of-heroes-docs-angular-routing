@@ -1,0 +1,13 @@
+<div *ngIf="crisis">
+  <h2>{{ crisis.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ crisis.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="editName" placeholder="name" />
+  </div>
+  <div style="margin-top: 30px">
+    <button (click)="cancel()" mat-raised-button>Cancel</button>
+    <button (click)="save()" mat-raised-button>Save</button>
+  </div>
+</div>
+<div *ngIf="!crisis">Crisis data not available</div>

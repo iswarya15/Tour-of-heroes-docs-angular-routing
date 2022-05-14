@@ -1,0 +1,19 @@
+<h2>Admin</h2>
+<nav>
+  <button
+    mat-raised-button
+    routerLink="./"
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+  >
+    Dashboard
+  </button>
+  <button routerLink="./crises" routerLinkActive="active" mat-raised-button>
+    Manage Crises
+  </button>
+  <button routerLink="./heroes" routerLinkActive="active" mat-raised-button>
+    Manage Heroes
+  </button>
+</nav>
+
+<router-outlet></router-outlet>

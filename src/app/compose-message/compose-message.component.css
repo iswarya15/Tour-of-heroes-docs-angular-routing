@@ -1,0 +1,18 @@
+button {
+  /* height: 40px;
+  width: 150px; */
+  background-color: #1ca64b;
+  color: #e5e5e5;
+  margin-left: 20px;
+}
+.active {
+  /* background-color: #e5e5e5;
+  color: #14213d; */
+  opacity: 50%;
+}
+textarea {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
